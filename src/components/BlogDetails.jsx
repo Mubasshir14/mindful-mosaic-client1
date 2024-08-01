@@ -18,7 +18,7 @@ const BlogDetails = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/blog/${id}`);
+                const response = await fetch(`https://mindful-mosaic-server.onrender.com/blog/${id}`);
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
@@ -37,7 +37,7 @@ const BlogDetails = () => {
     useEffect(() => {
         const fetchComments = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/comments/${id}`);
+                const response = await fetch(`https://mindful-mosaic-server.onrender.com/comments/${id}`);
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
@@ -61,7 +61,7 @@ const BlogDetails = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/comments', {
+            const response = await fetch('https://mindful-mosaic-server.onrender.com/comments', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -155,10 +155,10 @@ const BlogDetails = () => {
                                 <div className="flex items-center mb-2">
                                     <img
                                         className="object-cover object-center w-8 h-8 rounded-full"
-                                        src={comment.authorPhoto || "default-avatar.png"}
+                                        src={comment.authorPhoto}
                                         alt={comment.authorName || "Anonymous"}
                                     />
-                                    <p className="ml-2 text-gray-600 dark:text-gray-300">{comment.authorName || "Anonymous"}</p>
+                                    <p className="ml-2 text-gray-600 dark:text-gray-300">{comment.authorName}</p>
                                 </div>
                                 <p className="text-gray-600 dark:text-gray-300">{comment.content}</p>
                             </div>

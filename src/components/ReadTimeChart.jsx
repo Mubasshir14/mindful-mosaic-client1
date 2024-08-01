@@ -17,11 +17,11 @@ const ReadTimeChart = () => {
         const fetchChartData = async () => {
             try {
                 // Fetch total blog time
-                const blogsResponse = await fetch('http://localhost:5000/blog');
+                const blogsResponse = await fetch('https://mindful-mosaic-server.onrender.com/blog');
                 const blogs = await blogsResponse.json();
 
                 // Fetch saved blog times for the user
-                const savedBlogsResponse = await axios.get(`http://localhost:5000/savedBlogs?userId=${user.uid}`);
+                const savedBlogsResponse = await axios.get(`https://mindful-mosaic-server.onrender.com/savedBlogs?userId=${user.uid}`);
                 const savedBlogs = savedBlogsResponse.data;
 
                 // Create a map to track total read time for each blog ID

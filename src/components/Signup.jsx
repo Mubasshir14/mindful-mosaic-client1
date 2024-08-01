@@ -13,7 +13,7 @@ const Signup = () => {
             .then((res) => {
                 const user = res.user;
                 console.log(user);
-                fetch('http://localhost:5000/user', {
+                fetch('https://mindful-mosaic-server.onrender.com/user', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

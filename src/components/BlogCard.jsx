@@ -31,7 +31,7 @@ const BlogCard = ({ b }) => {
         };
 
         try {
-            const response = await axios.post('http://localhost:5000/savedBlogs', blogDetails);
+            const response = await axios.post('https://mindful-mosaic-server.onrender.com/savedBlogs', blogDetails);
             console.log(response.data);
             toast.success("Added To Read List Successfully!");
         } catch (error) {

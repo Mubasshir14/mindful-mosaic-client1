@@ -12,7 +12,7 @@ const AllBlogs = () => {
         const fetchBlogs = async () => {
             setLoading(true);
             try {
-                const response = await fetch('http://localhost:5000/blog');
+                const response = await fetch('https://mindful-mosaic-server.onrender.com/blog');
                 const data = await response.json();
                 setBlogs(data);
             } catch (error) {

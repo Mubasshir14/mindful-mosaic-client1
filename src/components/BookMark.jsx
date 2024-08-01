@@ -13,7 +13,7 @@ const BookMark = () => {
         const fetchSavedBlogs = async () => {
             if (!user) return;
             try {
-                const response = await axios.get(`http://localhost:5000/savedBlogs?userId=${user.uid}`);
+                const response = await axios.get(`https://mindful-mosaic-server.onrender.com/savedBlogs?userId=${user.uid}`);
                 setSavedBlogs(response.data);
             } catch (error) {
                 console.error('Error fetching saved blogs:', error);
@@ -35,7 +35,7 @@ const BookMark = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const response = await fetch(`http://localhost:5000/savedBlogs/${itemId}`, {
+                    const response = await fetch(`https://mindful-mosaic-server.onrender.com/savedBlogs/${itemId}`, {
                         method: 'DELETE',
                     });
 

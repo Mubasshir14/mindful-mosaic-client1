@@ -1,6 +1,7 @@
 import AllBlogs from "./AllBlogs";
 import Banner from "./Banner";
 import GetTouch from "./GetTouch";
+import ProfileCard from "./ProfileCard";
 
 
 
@@ -10,6 +11,7 @@ const Home = () => {
             <Banner />
             <AllBlogs />
             <GetTouch />
+            <ProfileCard/>
         </div>
     );
 };
