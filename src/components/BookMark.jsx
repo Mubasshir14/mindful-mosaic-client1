@@ -64,12 +64,15 @@ const BookMark = () => {
     };
 
     return (
-        <div className="min-h-[calc(100vh-400px)]">
+        <div className="min-h-[calc(100vh-400px)] mt-12 max-w-screen-xl mx-auto">
+
             <div>
-                <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <h1 className="md:text-3xl text-white text-xl  font-cinzel font-semibold text-center mb-6">Manage Your Read List</h1>
+                <div className="my-12 p-3 grid grid-cols-1 md:grid-cols-3 gap-4">
+   
                     {savedBlogs.map(blog => (
-                        <div key={blog._id} className="relative card flex bg-base-100 shadow-2xl">
-                            <div className="absolute top-2 right-4 p-1 bg-blue-500/55 rounded-lg font-cinzel">
+                        <div key={blog._id} className="relative bg-black card flex border-2  shadow-xl">
+                            <div className="absolute top-2 right-4 p-1 bg-blue-400/85 text-white rounded-lg font-cinzel">
                                 {/* <FaTimes
                                     className="text-red-500 cursor-pointer"
                                     onClick={() => handleDeleteItem(blog._id)}
@@ -83,9 +86,9 @@ const BookMark = () => {
                                     className="rounded-xl"
                                 />
                             </figure>
-                            <div className="card-body items-center text-center">
-                                <h2 className="card-title">{blog.title}</h2>
-                                <p>{blog.description.substring(0, 100)}...</p>
+                            <div className="card-body bg-black items-center text-center">
+                                <h2 className="card-title text-white">{blog.title}</h2>
+                                <p className='text-white'>{blog.description.substring(0, 100)}...</p>
                                 <div className="card-actions flex justify-between">
                                     <Link to={`/blog/${blog._id}`} className="btn btn-primary">Read Again</Link>
                                 </div>
