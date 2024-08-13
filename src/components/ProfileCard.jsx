@@ -6,7 +6,7 @@ const ProfileCard = () => {
       <h1 className="text-center font-cinzel text-2xl font-bold">T<span className="underline">e</span>a<span className="underline">m</span>s</h1>
       <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-4">
         
-        <div className="w-full border-2 px-8 py-4 mt-16 bg-white rounded-lg shadow-xl dark:bg-gray-800">
+        <div className="w-full border-2 px-8 py-4 mt-16  rounded-lg shadow-xl dark:bg-gray-800">
           <div className="flex justify-center md:justify-end -mt-16">
             <img className="object-cover w-20 h-20 border-2 border-blue-500 rounded-full dark:border-blue-400" 
               src="https://i.ibb.co/nPp4VHH/d0f42b5cf5cd.jpg" alt="Profile" />
@@ -23,7 +23,7 @@ const ProfileCard = () => {
           </div>
         </div>
 
-        <div className="w-full border-2 px-8 py-4 mt-16 bg-white rounded-lg shadow-xl dark:bg-gray-800">
+        <div className="w-full border-2 px-8 py-4 mt-16  rounded-lg shadow-xl dark:bg-gray-800">
           <div className="flex justify-center md:justify-end -mt-16">
             <img className="object-cover w-20 h-20 border-2 border-blue-500 rounded-full dark:border-blue-400" 
               src="https://i.ibb.co/nPp4VHH/d0f42b5cf5cd.jpg" alt="Profile" />
@@ -40,7 +40,7 @@ const ProfileCard = () => {
           </div>
         </div>
 
-        <div className="w-full border-2 px-8 py-4 mt-16 bg-white rounded-lg shadow-xl dark:bg-gray-800">
+        <div className="w-full border-2 px-8 py-4 mt-16  rounded-lg shadow-xl dark:bg-gray-800">
           <div className="flex justify-center md:justify-end -mt-16">
             <img className="object-cover w-20 h-20 border-2 border-blue-500 rounded-full dark:border-blue-400" 
               src="https://i.ibb.co/nPp4VHH/d0f42b5cf5cd.jpg" alt="Profile" />

@@ -9,7 +9,7 @@ const Footer = () => {
                     {/* < href="#">
                         <img className="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt="">
                     </a> */}
-                    <Link to='/' className="font-cinzel text-2xl font-extrabold">Mindful Meraki</Link>
+                    <Link to='/' className="font-cinzel text-2xl font-extrabold">Mindful Mosaic</Link>
 
                     <div className="flex flex-wrap justify-center mt-6 -mx-4">
                         <Link to='/' className="mx-4 text-sm text-black transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </Link>

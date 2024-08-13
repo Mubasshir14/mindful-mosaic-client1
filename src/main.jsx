@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
-import AllBlogs from './components/AllBlogs.jsx';
 import BlogDetails from './components/BlogDetails.jsx';
 import BookMark from './components/BookMark.jsx';
 import { ToastContainer } from 'react-toastify';
@@ -19,6 +18,7 @@ import ReadTimeChart from './components/ReadTimeChart.jsx';
 import PrivateRoute from './components/PrivateRoute.jsx';
 import Privacy from './components/Privacy.jsx';
 import GetTouch from './components/GetTouch.jsx';
+import TabBlog from './components/TabBlog.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/blog',
-        element: <AllBlogs />
+        element: <TabBlog/>
       },
       {
         path: '/blog/:id',

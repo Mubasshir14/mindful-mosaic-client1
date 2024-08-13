@@ -43,36 +43,37 @@ const AllBlogs = () => {
 
     return (
         <div className="my-12">
-        <h1 className="text-3xl font-cinzel font-semibold text-center">All Blogs</h1>
+            <h1 className="md:text-3xl text-xl  font-cinzel font-semibold text-center">All Blogs</h1>
+            <h1 className='text-center font-cinzel font-bold my-3 text-sm md:text-xl'>Dive Into Our Complete
+                Blog Collection</h1>
+            {loading ? (
+                <LoadingState />
+            ) : (
+                <>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                        {currentBlogs.map(b => <BlogCard key={b._id} b={b} />)}
+                    </div>
 
-        {loading ? (
-            <LoadingState />
-        ) : (
-            <>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                    {currentBlogs.map(b => <BlogCard key={b._id} b={b} />)}
-                </div>
-
-                <div className="pagination flex justify-center items-center mt-4">
-                    <button 
-                        onClick={handlePreviousPage} 
-                        disabled={currentPage === 1}
-                        className="px-4 py-2 mx-2 bg-blue-500 text-white rounded disabled:opacity-50"
-                    >
-                        Previous
-                    </button>
-                    <span className="mx-2">Page {currentPage} of {totalPages}</span>
-                    <button 
-                        onClick={handleNextPage} 
-                        disabled={currentPage === totalPages}
-                        className="px-4 py-2 mx-2 bg-blue-500 text-white rounded disabled:opacity-50"
-                    >
-                        Next
-                    </button>
-                </div>
-            </>
-        )}
-    </div>
+                    <div className="pagination flex justify-center items-center mt-4">
+                        <button
+                            onClick={handlePreviousPage}
+                            disabled={currentPage === 1}
+                            className="px-4 py-2 mx-2 bg-blue-500 text-white rounded disabled:opacity-50"
+                        >
+                            Previous
+                        </button>
+                        <span className="mx-2">Page {currentPage} of {totalPages}</span>
+                        <button
+                            onClick={handleNextPage}
+                            disabled={currentPage === totalPages}
+                            className="px-4 py-2 mx-2 bg-blue-500 text-white rounded disabled:opacity-50"
+                        >
+                            Next
+                        </button>
+                    </div>
+                </>
+            )}
+        </div>
     );
 };
 
