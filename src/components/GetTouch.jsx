@@ -1,20 +1,20 @@
-import img from '../assets/planet.jpg';
+import img from '../assets/community.jpg';
 
 const GetTouch = () => {
     return (
-        <div className="my-12">
+        <div className="my-12  p-3 md:p-0 ">
             <section id="about" className="mt-6 mb-12">
                 <div className="flex flex-col items-center justify-center space-y-3">
-                    <h1 className="md:text-3xl text-xl  font-cinzel font-semibold text-center">Get in Touch</h1>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-sm md:text-xl'>
+                    <h1 className="md:text-3xl text-white text-xl  font-cinzel font-semibold text-center">Get in Touch</h1>
+                    <h1 className='text-center font-cinzel text-white font-bold my-3 text-sm md:text-xl'>
                     Connect with us for inquiries, feedback, or collaboration opportunities.</h1>
                 </div>
                 <header className="mt-4">
-                    <div className="w-full bg-center bg-cover lg:h-[400px] rounded-xl"
+                    <div className="w-full bg-center bg-cover lg:h-[400px] rounded-xl rounded-t-none"
                         style={{ backgroundImage: `url(${img})` }}>
                         <div className="flex items-center  justify-center  w-full h-full rounded-xl p-5">
                             <div className="items-center text-center flex flex-col lg:flex-row justify-around gap-6">
-                                <div className=" p-5 bg-base-300/85 rounded-xl">
+                                <div className=" p-5 bg-black/85 rounded-xl">
 
                                     <div className="flex  flex-col items-center justify-center text-center">
                                         <span className="p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
@@ -23,8 +23,8 @@ const GetTouch = () => {
                                             </svg>
                                         </span>
 
-                                        <h2 className="mt-4 text-lg font-medium font-cinzel text-gray-800 dark:text-white">Email</h2>
-                                        <p className="mt-2 font-cinzel text-gray-800 dark:text-gray-400">Our team is here to help.</p>
+                                        <h2 className="mt-4 text-lg font-medium font-cinzel text-white dark:text-white">Email</h2>
+                                        <p className="mt-2 font-cinzel text-white dark:text-gray-400">Our team is here to help.</p>
                                         <p className="mt-2 text-blue-500 dark:text-blue-400">mindful@mosaic.com</p>
                                     </div>
 
@@ -34,7 +34,7 @@ const GetTouch = () => {
 
 
 
-                                <div className="bg-base-300/85 p-5 rounded-xl">
+                                <div className="bg-black/85 p-5 rounded-xl">
                                     <div className="flex flex-col items-center justify-center text-center">
                                         <span className="p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
@@ -43,8 +43,8 @@ const GetTouch = () => {
                                             </svg>
                                         </span>
 
-                                        <h2 className="mt-4 text-lg font-medium font-cinzel text-gray-800 dark:text-white">Office</h2>
-                                        <p className="mt-2 font-cinzel text-gray-800 dark:text-gray-400">Say hello at our office MM.</p>
+                                        <h2 className="mt-4 text-lg font-medium font-cinzel text-white dark:text-white">Office</h2>
+                                        <p className="mt-2 font-cinzel text-white dark:text-gray-400">Say hello at our office MM.</p>
                                         <p className="mt-2 text-blue-500 dark:text-blue-400">100 Smith St, Collingwood VIC</p>
                                     </div>
 
@@ -53,7 +53,7 @@ const GetTouch = () => {
 
 
 
-                                <div className="bg-base-300/85 p-5 rounded-xl">
+                                <div className="bg-black/85 p-5 rounded-xl">
                                     <div className="flex flex-col items-center justify-center text-center">
                                         <span className="p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
@@ -61,8 +61,8 @@ const GetTouch = () => {
                                             </svg>
                                         </span>
 
-                                        <h2 className="mt-4 text-lg font-medium font-cinzel text-gray-800 dark:text-white">Phone</h2>
-                                        <p className="mt-2 font-cinzel text-gray-800 dark:text-gray-400">Everyday from 8am to 5pm.</p>
+                                        <h2 className="mt-4 text-lg font-medium font-cinzel text-white dark:text-white">Phone</h2>
+                                        <p className="mt-2 font-cinzel text-white dark:text-gray-400">Everyday from 8am to 5pm.</p>
                                         <p className="mt-2 text-blue-500 dark:text-blue-400">+1 (555) 000-0000</p>
                                     </div>
 

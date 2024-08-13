@@ -80,9 +80,9 @@ const Signup = () => {
 
     return (
         <div>
-            <section className="bg-white dark:bg-gray-900">
-                <div className="flex justify-center min-h-screen">
-                    <div className="flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
+            <section className="bg-black">
+                <div className="flex justify-center text-white min-h-screen">
+                    <div className="flex items-center  w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
                         <div className="w-full">
                             <div className="">
                                 <h2 className="mb-3 text-3xl font-semibold text-center">Register Your Account</h2>
@@ -108,23 +108,23 @@ const Signup = () => {
                             </div>
                             <form onSubmit={handleSignUp} className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
                                 <div>
-                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Name</label>
+                                    <label className="block mb-2 text-sm text-white dark:text-gray-200">Name</label>
                                     <input type="text" name='name' required placeholder="Name" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Photo</label>
+                                    <label className="block mb-2 text-sm text-white dark:text-gray-200">Photo</label>
                                     <input type="text" required name="photo" placeholder="Photo URL" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Phone number</label>
+                                    <label className="block mb-2 text-sm text-white dark:text-gray-200">Phone number</label>
                                     <input type="text" required name="phone" placeholder="XXX-XX-XXXX-XXX" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email</label>
+                                    <label className="block mb-2 text-sm text-white dark:text-gray-200">Email</label>
                                     <input type="email" name="email" placeholder="Email" required className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
                                 <div className="md:col-span-2 col-span-1">
-                                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Password</label>
+                                    <label className="block mb-2 text-sm text-white dark:text-gray-200">Password</label>
                                     <input type="password" name="password" required placeholder="Enter your password" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
                                 <div className="md:col-span-2 col-span-1">

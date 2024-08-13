@@ -42,15 +42,15 @@ const AllBlogs = () => {
     };
 
     return (
-        <div className="my-12">
-            <h1 className="md:text-3xl text-xl  font-cinzel font-semibold text-center">All Blogs</h1>
-            <h1 className='text-center font-cinzel font-bold my-3 text-sm md:text-xl'>Dive Into Our Complete
+        <div className="my-12 max-w-screen-xl mx-auto">
+            <h1 className="md:text-3xl text-white text-xl  font-cinzel font-semibold text-center">All Blogs</h1>
+            <h1 className='text-center text-white font-cinzel font-bold my-3 text-sm md:text-xl'>Dive Into Our Complete
                 Blog Collection</h1>
             {loading ? (
                 <LoadingState />
             ) : (
                 <>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 p-3">
                         {currentBlogs.map(b => <BlogCard key={b._id} b={b} />)}
                     </div>
 
@@ -62,7 +62,7 @@ const AllBlogs = () => {
                         >
                             Previous
                         </button>
-                        <span className="mx-2">Page {currentPage} of {totalPages}</span>
+                        <span className="mx-2 text-white">Page {currentPage} of {totalPages}</span>
                         <button
                             onClick={handleNextPage}
                             disabled={currentPage === totalPages}

@@ -34,7 +34,7 @@ const Nav = () => {
                 )}
             </li>
             <li className="md:hidden">
-                <label className="flex cursor-pointer gap-2">
+                {/* <label className="flex cursor-pointer gap-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -66,19 +66,19 @@ const Nav = () => {
                         strokeLinejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                </label>
+                </label> */}
             </li>
             <li className="block md:hidden">
                 <div className=" justify-center items-center gap-2 mt-6 lg:flex lg:mt-0 lg:-mx-2">
                     {user ? (
                         <>
                             <img src={user?.photoURL} alt="User Avatar" className="w-10 h-10 rounded-full mx-2 border-2" />
-                            <Link onClick={handleLogOut} to="/" className="btn bg-blue-500 text-white">
+                            <Link onClick={handleLogOut} to="/" className="btn bg-blue-500 border-none outline-none text-white">
                                 Sign Out
                             </Link>
                         </>
                     ) : (
-                        <Link to="/login" className="btn bg-blue-500 text-white">
+                        <Link to="/login" className="btn bg-blue-500 border-none outline-none text-white">
                             Sign In
                         </Link>
                     )}
@@ -89,7 +89,7 @@ const Nav = () => {
 
     return (
         <div className="font-cinzel  h-[50px]">
-            <div className="navbar fixed z-10  max-w-screen-xl bg-base-300/85 border-b-2 border-black">
+            <div className="navbar fixed z-10   bg-base-300/85 border-b-2 border-black">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -115,12 +115,12 @@ const Nav = () => {
                     <Link to='/' className="font-bold  font-cinzel btn-ghost text-sm md:text-2xl">Mindful  <span className="">Mosaic</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu dark:text-white gap-4 menu-horizontal mr-6 px-1">
+                    <ul className="menu text-black font-bold gap-4 menu-horizontal mr-6 px-1">
                         {navItem}
                     </ul>
                 </div>
                 <div className="navbar-end hidden md:flex gap-4 p-1">
-                    <label className="flex cursor-pointer gap-2">
+                    {/* <label className="flex cursor-pointer gap-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -152,18 +152,18 @@ const Nav = () => {
                             strokeLinejoin="round">
                             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                         </svg>
-                    </label>
+                    </label> */}
                     <div className="hidden md:flex justify-center items-center gap-2 mt-6 lg:flex lg:mt-0 lg:-mx-2 ">
                         {user ? (
                             <>
                                 <img src={user?.photoURL} alt="User Avatar" className="w-10 h-10 rounded-full mx-2 border-2" />
-                                <Link onClick={handleLogOut} to="/" className="btn bg-blue-500 text-white">
+                                <Link onClick={handleLogOut} to="/" className="btn bg-blue-500 border-none outline-none text-white">
                                     Sign Out
                                 </Link>
 
                             </>
                         ) : (
-                            <Link to="/login" className="btn bg-blue-500  text-white">
+                            <Link to="/login" className="btn bg-blue-500 border-none outline-none  text-white">
                                 Sign In
                             </Link>
                         )}

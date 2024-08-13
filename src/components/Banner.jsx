@@ -15,7 +15,7 @@ import img1 from '../assets/online-blog .jpg'
 import img2 from '../assets/word-blog.jpg'
 const Banner = () => {
     return (
-        <div className='mt-8'>
+        <div className='rounded-lg mt-6 rounded-t-none'>
             <Swiper
                 spaceBetween={30}
                 // slidesPerView={1}
@@ -32,14 +32,14 @@ const Banner = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <img src={img2} alt="" />
+                <SwiperSlide className='  rounded-lg rounded-t-none'>
+                    <img src={img2} alt="" className='rounded-lg rounded-t-none' />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src={img1} alt="" />
+                <SwiperSlide className='border-2 border-t-0 rounded-lg'>
+                    <img src={img1} alt="" className=' rounded-lg rounded-t-none' />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src={img} alt="" />
+                <SwiperSlide className=' rounded-lg'>
+                    <img src={img} alt="" className='rounded-lg rounded-t-none' />
                 </SwiperSlide>
             </Swiper>
         </div>

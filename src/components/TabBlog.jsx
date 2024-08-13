@@ -55,10 +55,10 @@ const TabBlog = () => {
     }
 
     return (
-        <div className='my-12'>
-            <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Explore Blogs by Category</h1>
+        <div className='my-12 p-3 max-w-screen-xl mx-auto'>
+            <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Explore Blogs by Category</h1>
             <Tabs>
-                <div className='flex items-center justify-center '>
+                <div className='flex text-white items-center justify-center '>
                     <TabList>
                         <Tab>Human</Tab>
                         <Tab>Health</Tab>
@@ -78,7 +78,7 @@ const TabBlog = () => {
 
                 <TabPanel>
                     <div>
-                        <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Human Rights</h1>
+                        <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Human Rights</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 human.map(b => (
@@ -90,7 +90,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Health</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Health</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 health.map(b => (
@@ -102,7 +102,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Environment</h1>
+                    <h1 className='text-center  text-white font-cinzel font-bold my-3 text-xl'>Environment</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 environment.map(b => (
@@ -114,7 +114,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Emergy</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Emergy</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 energy.map(b => (
@@ -126,7 +126,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Technology</h1>
+                    <h1 className='text-center text-white  font-cinzel font-bold my-3 text-xl'>Technology</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                technology.map(b => (
@@ -138,7 +138,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Economy</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Economy</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 economy.map(b => (
@@ -150,7 +150,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Education</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Education</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 education.map(b => (
@@ -162,7 +162,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Food Security</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Food Security</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 foodSecurity.map(b => (
@@ -174,7 +174,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Employment</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Employment</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 employment.map(b => (
@@ -186,7 +186,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Gender</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Gender</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 gender.map(b => (
@@ -198,7 +198,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Agriculture</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Agriculture</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 agriculture.map(b => (
@@ -210,7 +210,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Urban Development</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Urban Development</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 urban.map(b => (
@@ -222,7 +222,7 @@ const TabBlog = () => {
                 </TabPanel>
                 <TabPanel>
                     <div>
-                    <h1 className='text-center font-cinzel font-bold my-3 text-xl'>Social Issues</h1>
+                    <h1 className='text-center text-white font-cinzel font-bold my-3 text-xl'>Social Issues</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                             {
                                 social.map(b => (

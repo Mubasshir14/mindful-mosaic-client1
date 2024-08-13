@@ -73,7 +73,7 @@ const Login = () => {
 
     return (
         <div className="mt-6  mb-6">
-            <div className="w-full max-w-md mx-auto p-4 rounded-md shadow sm:p-8 dark:bg-gray-50 dark:text-gray-800">
+            <div className="w-full max-w-md mx-auto text-white p-4 rounded-md shadow sm:p-8 dark:bg-gray-50 dark:text-gray-800">
                 <h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
                 <p className="text-sm text-center dark:text-gray-600">Don't have an account?
                     <Link to='/signup' className="focus:underline hover:underline text-red-600">Sign up here</Link>

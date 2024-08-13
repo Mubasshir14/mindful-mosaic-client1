@@ -101,12 +101,12 @@ const BlogDetails = () => {
     const { title, author, author_image, image, category, description } = blog;
 
     return (
-        <div className="my-12">
-            <button onClick={() => navigate(-1)} className="flex items-center space-x-2 hover:text-blue-400">
+        <div className="m-12 max-w-screen-xl mx-auto border-l border-r border-1 p-1 rounded-lg">
+            <button onClick={() => navigate(-1)} className="flex p-2 items-center text-white space-x-2 hover:text-blue-400">
                 <FaArrowAltCircleLeft className="w-6 h-6" />
                 <span>Back</span>
             </button>
-            <div className="container mx-auto px-6 py-10">
+            <div className="container shadow-lg  mx-auto px-6 py-10">
                 <div className="flex flex-col lg:flex-row items-start space-y-6 lg:space-y-0 lg:space-x-6">
                     <img
                         className="object-cover w-full lg:w-1/2 rounded-xl h-72 lg:h-auto"
@@ -115,8 +115,9 @@ const BlogDetails = () => {
                     />
                     <div className="lg:w-1/2">
                         <p className="text-sm text-blue-500 uppercase">{category}</p>
-                        <h1 className="mt-2 text-3xl font-semibold text-gray-800 dark:text-white font-cinzel">{title}</h1>
-                        <p className="mt-4 text-gray-600 dark:text-gray-300">{description}</p>
+                        <h1 className="mt-2 md:text-3xl font-semibold text-white dark:text-white font-cinzel">{title}</h1>
+                        <hr />
+                        <p className="mt-4 text-white dark:text-gray-300">{description}</p>
                         <div className="flex items-center mt-6">
                             <img
                                 className="object-cover object-center w-10 h-10 rounded-full"
@@ -124,8 +125,8 @@ const BlogDetails = () => {
                                 alt={author}
                             />
                             <div className="ml-4">
-                                <h1 className="text-sm text-gray-700 dark:text-gray-200">{author}</h1>
-                                <p className="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
+                                <h1 className="text-sm text-white dark:text-gray-200">{author}</h1>
+                                <p className="text-sm text-white dark:text-gray-400">Lead Developer</p>
                             </div>
                         </div>
                     </div>
@@ -133,10 +134,10 @@ const BlogDetails = () => {
             </div>
 
             <div className="container mx-auto px-6 py-10">
-                <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">Comments</h2>
+                <h2 className="text-2xl font-semibold text-white dark:text-white">Comments</h2>
                 <form onSubmit={handleCommentSubmit} className="mt-6">
                     <textarea
-                        className="w-full p-4 text-gray-600 bg-gray-100 rounded-md focus:outline-none focus:bg-white"
+                        className="w-full p-4 text-white bg-gray-700 rounded-md focus:outline-none focus:bg-white"
                         placeholder="Write a comment..."
                         value={commentContent}
                         onChange={(e) => setCommentContent(e.target.value)}
@@ -148,7 +149,7 @@ const BlogDetails = () => {
                 </form>
                 <div className="space-y-4 mt-4">
                     {comments.length === 0 ? (
-                        <p className="text-gray-600 dark:text-gray-300">No comments yet. Be the first to comment!</p>
+                        <p className="text-white dark:text-gray-300">No comments yet. Be the first to comment!</p>
                     ) : (
                         comments.map(comment => (
                             <div key={comment._id} className="p-4 bg-gray-100 rounded-lg">
@@ -158,9 +159,9 @@ const BlogDetails = () => {
                                         src={comment.authorPhoto}
                                         alt={comment.authorName || "Anonymous"}
                                     />
-                                    <p className="ml-2 text-gray-600 dark:text-gray-300">{comment.authorName}</p>
+                                    <p className="ml-2 text-white dark:text-gray-300">{comment.authorName}</p>
                                 </div>
-                                <p className="text-gray-600 dark:text-gray-300">{comment.content}</p>
+                                <p className="text-white dark:text-gray-300">{comment.content}</p>
                             </div>
                         ))
                     )}
