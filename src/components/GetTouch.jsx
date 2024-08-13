@@ -5,9 +5,9 @@ const GetTouch = () => {
         <div className="my-12">
             <section id="about" className="mt-6 mb-12">
                 <div className="flex flex-col items-center justify-center space-y-3">
-                    <h1 className="md:text-3xl text-xl  font-cinzel font-semibold text-center">About Us</h1>
+                    <h1 className="md:text-3xl text-xl  font-cinzel font-semibold text-center">Get in Touch</h1>
                     <h1 className='text-center font-cinzel font-bold my-3 text-sm md:text-xl'>
-                        Empowering Communities, Inspiring Hope</h1>
+                    Connect with us for inquiries, feedback, or collaboration opportunities.</h1>
                 </div>
                 <header className="mt-4">
                     <div className="w-full bg-center bg-cover lg:h-[400px] rounded-xl"
